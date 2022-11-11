@@ -7,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  public nomeProduto: string = 'Curso de Angular';
+  nomeProduto: string = 'Curso de Angular';
   anuncio: string = `O ${this.nomeProduto} está  em promoção`;
-  idProduto: number = 123;
-  precoProduto: number = 2.59;
+  idProduto: number = 3;
+  precoProduto: number = 2.5123;
   promocao: boolean = true;
+  foto:string = 'assets/img/crud.png';
+  dataValidade='31/12/2022'
 
   constructor() {
     //this.anuncio = 'O ' + this.nomeProduto + 'está em promoção';
@@ -43,9 +45,8 @@ export class HomeComponent implements OnInit {
         console.log('idade dentro do for: ', idade);
       }
       console.log('idade fora do for: ', idade);
-  }
-  imprimeIdade();
-  imprimeIdadeFor();*/
+  }*/
+
   var a = 10;
   let b = 20;
   function bar(){
@@ -64,7 +65,8 @@ export class HomeComponent implements OnInit {
    console.log('variavel a fora do if: ',a);
    console.log('variavel b fora do if: ',b);
   }
-
+imprimeIdade();
+//imprimeIdadeFor();
   }
   ngOnInit(): void {}
 }
